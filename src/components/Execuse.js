@@ -7,6 +7,7 @@ export const Execuse = ({ category, setCategory }) => {
     () => Axios.get(`https://excuser-three.vercel.app/v1/excuse/${category}`).then((res) => res.data),
     {
       enabled: !!category,
+      cacheTime: 0
     }
   );
 
